@@ -1,0 +1,7 @@
+../Src/i2c-lcd.c:32:6:LCD_Write	2
+../Src/i2c-lcd.c:45:6:lcd_send_cmd	1
+../Src/i2c-lcd.c:64:6:lcd_send_data	1
+../Src/i2c-lcd.c:77:6:lcd_clear	2
+../Src/i2c-lcd.c:86:6:lcd_put_cur	3
+../Src/i2c-lcd.c:101:6:lcd_init	1
+../Src/i2c-lcd.c:130:6:lcd_send_string	2

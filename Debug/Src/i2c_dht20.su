@@ -1,0 +1,5 @@
+../Src/i2c_dht20.c:14:6:dht20_write	4	static
+../Src/i2c_dht20.c:16:6:dht20_read	4	static
+../Src/i2c_dht20.c:53:6:dht20_send_cmd	4	static
+../Src/i2c_dht20.c:55:6:dht20_send_data	4	static
+../Src/i2c_dht20.c:57:6:dht20_init	4	static

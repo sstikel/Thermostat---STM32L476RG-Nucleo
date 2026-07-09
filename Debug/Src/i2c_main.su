@@ -1,0 +1,5 @@
+../Src/i2c_main.c:11:6:i2c_config	4	static
+../Src/i2c_main.c:40:6:i2c_start	4	static
+../Src/i2c_main.c:45:6:i2c_stop	4	static
+../Src/i2c_main.c:52:6:i2c_address	16	static
+../Src/i2c_main.c:61:6:i2c_write	16	static
