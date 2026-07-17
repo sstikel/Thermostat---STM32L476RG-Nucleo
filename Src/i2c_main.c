@@ -11,8 +11,9 @@
 void i2c_config(void)
 {
 	// Enable peripheral clocks
-	RCC->AHB2ENR  |= RCC_AHB2ENR_GPIOBEN; // (1 << 1); // GPIOB
+	RCC->AHB2ENR  |= RCC_AHB2ENR_GPIOBEN; // GPIOB
 	RCC->APB1ENR1 |= RCC_APB1ENR1_I2C1EN; // I2C1
+
 
 	// GPIOB config of pins PB8 and PB9
 	//	MODER, OSPEEDR, PUPDR: PB8 -> bits 16 and 17; PB9 -> bits 18 and 19
@@ -25,7 +26,7 @@ void i2c_config(void)
 	GPIOB->AFR[1]  |=  (4 << 0)  |  (4 << 4);  // Alternate Function AF4 (See datasheet; I2C1 column, PB8 and PB9 rows; PB8 -> SCL, PB9 -> SDA)
 
 
-	// I2C Config
+	// I2C config
 	I2C1->CR1 &= ~I2C_CR1_PE; // Disable/reset I2C peripheral
 
 	// Peripheral timings
